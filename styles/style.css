@@ -1,1 +1,298 @@
-/* место для вашего кода */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #fff;
+}
+
+/*header*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 92px 50px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header__links-list-item:first-child {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  margin-right: 120px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.header__contacts,
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  line-height: 24.3px;
+}
+
+/*main*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/*cover*/
+
+.cover {
+  position: relative;
+  padding: 50px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0 0;
+  opacity: 0.6;
+  background-color: #000;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  margin: 135px auto;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.cover__title > span {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.aligned-text {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 78px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.cover__description-text {
+  font: inherit;
+  word-spacing: 30px;
+}
+
+.bet-button {
+  width: 257px;
+  height: 52px;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+/*lots*/
+
+.lots {
+  padding: 50px;
+}
+
+.lots__title {
+  margin: 30px 40px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  flex: 1 0 32%;
+}
+
+.card-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 450px;
+  padding: 50px 40px;
+  color: #fff;
+  line-height: 120%;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_type_film,
+.card_type_book,
+.card_type_picture {
+  background-size: cover;
+}
+
+.card__title {
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.lots__link-look-more {
+  display: block;
+  margin: 30px 40px;
+}
+/*about*/
+
+.about {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.about__logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 95px;
+}
+
+.about__logo-image {
+  display: block;
+  width: 148px;
+  margin: auto;
+}
+
+.about__title {
+  margin: 100px 0;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 90px 50px;
+}
+
+.footer__links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__cocial-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+.footer__social-link {
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+}
