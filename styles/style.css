@@ -270,8 +270,9 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 90px 50px;
+  align-items: start;
+  padding: 90px 50px;
+  margin-top: 100px;
 }
 
 .footer__links-list {
@@ -281,14 +282,15 @@ body {
   list-style: none;
 }
 
-.footer__cocial-list {
+.footer__social-list {
   display: flex;
   gap: 48px;
   list-style: none;
 }
 
-.footer__social-list-item {
-  list-style: none;
+.footer__cocial-list {
+  display: flex;
+  row-gap: 60px;
 }
 
 .footer__social-link {
