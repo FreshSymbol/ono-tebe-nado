@@ -288,11 +288,6 @@ body {
   list-style: none;
 }
 
-.footer__cocial-list {
-  display: flex;
-  row-gap: 60px;
-}
-
 .footer__social-link {
   text-decoration: none;
 }
